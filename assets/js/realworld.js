@@ -6,24 +6,34 @@
 der et korrekte svar:
 nej 
 */
-
-
 const myAnsverInput = document.getElementById('answerOne');
 const myAnsverButton = document.getElementById('answerButton');
 const myAnsverFeedbackElement = document.getElementById('answerFeedback');
 
-myAnsverButton.addEventListener('click', (e) => {
-  e.preventDefault();
-  /* din kode her. Skriv en alert der skriver "du har svarret rigtigt" hvis svarret er true
-  og "du har svarret forkert" hvis svaret er false*/
-  let myAnswer = myAnsverInput.value;
-  console.log('Answer is: ' + myAnswer);
-});
+// myAnsverButton.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   /* din kode her. Skriv en alert der skriver "du har svarret rigtigt" hvis svarret er true
+//   og "du har svarret forkert" hvis svaret er false*/
+//   let myAnswer = myAnsverInput.value;
+//   if (myAnswer === "true") {
+//     console.log('du har svarret rigtigt')
+//   }else{
+//     console.log('du har svarret forkert')
+//   }
+// });
 
 /*Opgave 2: udkommenter opgave 1, og omskriv nu din funktion til to korrekte svar:
 nej
 ja i disney film
 */
+
+myAnsverButton.addEventListener('click', (e) =>{
+  e.preventDefault();
+  let myAnswer = myAnsverInput.value;
+  if (myAnswer === "true"){
+    console.log('du har svarret rigtigt')
+  }
+})
 
 
 /*opgave 3: skriv en kode der valider formen med følgende elementer: (denne opgave er på extreme niveau) 
